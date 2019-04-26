@@ -37,11 +37,11 @@ class Employee {
     this.email = email;
     this.age = age;
   }
-  makeWidget() {
-    return `${first_name} ${last_name} widget`
+      makeWidget() {
+        return `${this.first_name} ${this.last_name} Widget`
   }
 }
-
+// let employee1 = new Employee('mike','norton','mike@email.com',15)
 
 ////////// PROBLEM 2 //////////
 
