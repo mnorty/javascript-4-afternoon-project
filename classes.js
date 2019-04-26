@@ -36,12 +36,13 @@ class Employee {
     this.last_name = last_name;
     this.email = email;
     this.age = age;
+    this.makeWidget = makeWidget
   }
       makeWidget() {
         return `${this.first_name} ${this.last_name} Widget`
   }
 }
-// let employee1 = new Employee('mike','norton','mike@email.com',15)
+
 
 ////////// PROBLEM 2 //////////
 
@@ -59,7 +60,14 @@ class Employee {
 */
 
 //Code Here
-
+class Manager extends Employee {
+  constructor(first_name,last_name,email,age,makeWidget,reports,hire,fire){
+      super(first_name,last_name,email,age,makeWidget)
+      this.reports = reports;
+      this.hire = hire
+      this.fire = fire
+  }
+}
 
 ////////// PROBLEM 3 //////////
 
